@@ -1,1 +1,51 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Agrega el CSS externo-->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+
+<body>
+
+    <h1>CALCULADORA</h1>
+
+    <!--Inputs para obtener operandos-->
+    <div class="operands">
+        <input type="text" class="input_control" placeholder="Ingrese 1° numero" id="operand_1" />
+    </div>
+    <div class="operands">
+        <input type="text" class="input_control" placeholder="Ingrese 2° numero" id="operand_2" />
+    </div>
+
+    <!--Drop-down para seleccionarl el operador-->
+    <div class="drop_down">
+        <label for="operators">Operacion:</label>
+        <select name="operators" id="operators">
+            <option disabled selected>-Elige operacion-</option>
+            <option value="addition">Suma</option>
+            <option value="subtraction">Resta</option>
+            <option value="multiplication">Multiplicacion</option>
+            <option value="division">Division</option>
+        </select>
+    </div>
+
+    <div class="botonera">
+        <!--Boton para calcular-->
+        <button type="button" id="go" onclick="calculate()">Calcular!</button>
+        <!--Boton para resetear la URL-->
+        <button type="button" id="stop" onclick="location.reload()">Reset</button>
+    </div>
+
+    <!--Si todo sale bien estos parrafos son los que muestran el resultado-->
+    <p class="result" id="result_text"></p>
+    <p class="result" id="show_result"></p>
+
+    <!--Agrega JS externo-->
+    <script src="script.js"></script>
+</body>
+
+</html>

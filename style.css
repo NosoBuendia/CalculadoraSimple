@@ -1,0 +1,105 @@
+/*Agrega una fuente desde una url*/
+@Font-face {
+    font-family: oldComputerFont;
+    src: url(media/retro_computer_personal_use.ttf);
+}
+/*Agrega una imagen de fondo, cubriendo la web del todo sin repetirse*/  
+body {
+    background: url(media/pexels-karolina-grabowska-5412499.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;  
+}
+/*Efectos de sombras en la etiqueta h1*/  
+h1 {
+    font-family: oldComputerFont;
+    text-align: center;  
+    font-size: 100px;
+    color: aliceblue; 
+    text-shadow: -5px 0 black, 0 5px black, 3px 0 black, 0 -3px black; 
+}
+/*Centrando los divs donde estan las etiquetas input, uno debajo del otro*/
+.operands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Sombras. color de fondo y otros estilos de los input*/
+.input_control { 
+    font-family: oldComputerFont;
+    font-size: 16px;
+    height: auto;
+    width: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    background-color: rgb(40, 68, 51);
+    color: #91e2ba;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}  
+/*Estilos de la etiqueta select*/
+.drop_down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: oldComputerFont;
+    font-size: 15px;  
+} 
+/*centrando los botones de calcular y reset uno al lado del otro*/ 
+.botonera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;   
+}
+/*".go" y ".go:active" definen estilo y sombras del boton de calcular, para que se modifique al ser apretado*/
+#go {
+    font-family: oldComputerFont;
+    color: #ecf0f1;
+    font-size: 17px;
+    background-color: #25db3e;
+    border: 1px solid #18991e;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 6px 0px #0b5708;
+    transition: all .1s;
+}  
+#go:active {
+    box-shadow: 0px 2px 0px #0b5708;
+    position: relative;
+    top: 2px;
+}
+/*".stop" y ".stop:active" definen estilo y sombras del boton de reset, para que se modifique al ser apretado*/  
+#stop {
+    font-family: oldComputerFont;
+    color: #ecf0f1;
+    font-size: 17px;
+    background-color: #b33120;
+    border: 1px solid #c9211c;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 6px 0px #520808;
+    transition: all .1s;
+}   
+#stop:active {
+    box-shadow: 0px 2px 0px #520808;
+    position: relative;
+    top: 2px;
+}
+/*Centrando y dandole fomato a los parrafos que componen el resultado*/ 
+.result {
+    font-family: oldComputerFont;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*El segundo parrafo con una fuente de tamaño mayor, bordes(sombras) y otro color pra que se pierda en el fondo*/
+#show_result {
+    font-family: oldComputerFont;
+    color: aliceblue; 
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;        
+    font-size: 37px;
+    letter-spacing: 2px;
+}  
